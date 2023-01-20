@@ -1,0 +1,432 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  color: #212529;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #343a40;
+  font-weight: 700;
+}
+
+a:hover,
+a:focus {
+  color: red;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  font-size: 1em;
+}
+
+.header-title {
+  width: 220px;
+  max-height: 90px;
+  margin-left: 2em;
+  padding-top: 5px;
+}
+
+.title-img {
+  width: 100%;
+  height: 100%;
+}
+
+.header-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  height: 120px;
+}
+
+.nav-container {
+  padding: 30px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 3em;
+}
+
+.nav-cta a {
+  padding: 10px 20px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  background-color: #cc1f22;
+  color: #fff;
+}
+
+.nav-cta a:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.hero-section {
+  background-image: url("./images/pexels-feruzbek-matkarimov-2885940.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  width: 100vw;
+  height: 110vh;
+  position: relative;
+}
+
+.overlay {
+  height: 110vh;
+  width: 100vw;
+  background-color: rgba(110, 83, 86, 0.237);
+  z-index: 1;
+  opacity: 1;
+}
+
+.hero-text {
+  font-weight: 700;
+  position: absolute;
+  top: 40vh;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  margin-left: 2em;
+  z-index: 8;
+  opacity: 1;
+  visibility: visible;
+}
+
+.hero-text-p {
+  display: inline-block;
+  text-align: left;
+  width: 40%;
+  font-size: 1.8em;
+  font-weight: bold;
+  line-height: 40px;
+  font-family: permanent marker;
+}
+
+.hero-text a {
+  text-align: center;
+  display: block;
+  width: 20%;
+  padding: 5px;
+  border-radius: 40px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #cc1f22;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero-text a:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.keepintouch {
+  background-color: #000;
+  color: #fff;
+  padding: 2.5%;
+}
+.keepintouch h2 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+.keepintouch p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.keepintouch input {
+  display: block;
+  width: 40%;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+  margin-bottom: 10px;
+  border: solid #cc1f22;
+  border-radius: 40px;
+}
+.keepintouch a {
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: 300px;
+  padding: 5px;
+  border-radius: 40px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #cc1f22;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.keepintouch a:hover {
+  background-color: #fff;
+  color: #cc1f22;
+  transition: 0.3s;
+}
+
+.cta-container {
+  display: flex;
+  width: 100%;
+  border: 5px solid white;
+  gap: 0.3em;
+}
+
+.cta-container:first-child {
+  border-left: none;
+}
+
+.cta-container:last-child {
+  border-right: none;
+}
+
+.cta-box-img {
+  width: 500px;
+  height: 400px;
+  position: relative;
+}
+
+.cta-box-img:hover img {
+  transition: all 0.5s ease-in-out;
+  transform: scale(0.95);
+  z-index: 5;
+}
+
+.cta-box-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.faq {
+  text-transform: uppercase;
+  background-color: #ee364d;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 0.3em;
+}
+
+.faq > a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.faq:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.company-profile {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+}
+
+.cp-text {
+  width: 50%;
+  text-align: center;
+  padding: 50px;
+  font-size: 2em;
+}
+
+.cp-text > a {
+  color: #fff;
+}
+
+.cp-text:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.about-us {
+  background-color: #ee364d;
+}
+
+.contact-us {
+  background-color: black;
+}
+
+footer {
+  padding: 5%;
+  text-align: center;
+}
+footer img {
+  width: 60px;
+}
+
+@media (max-width: 992px) {
+  .header-container {
+    width: 100%;
+    display: block;
+    height: 150px;
+  }
+
+  .header-title {
+    width: 220px;
+    max-height: 90px;
+    margin-left: 2em;
+    padding-top: 10px;
+  }
+
+  .nav-container {
+    padding: 10px;
+    line-height: 20px;
+    margin-left: 2em;
+    text-align: center;
+  }
+
+  .nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    font-size: 1em;
+  }
+
+  .nav-cta a {
+    display: block;
+    padding: 5px 20px;
+  }
+
+  .hero-section {
+    width: 100vw;
+    height: 80vh;
+  }
+
+  .hero-text {
+    top: 25vh;
+    width: 100%;
+  }
+
+  .hero-text-p {
+    display: inline-block;
+    width: 50%;
+    font-size: 1.4em;
+    line-height: 30px;
+  }
+
+  .hero-text a {
+    display: block;
+    width: 30%;
+    border-radius: 40px;
+    margin-top: 30px;
+  }
+
+  .cta-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  .cta-box-img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .faq {
+    padding: 10px;
+  }
+
+  .faq > a {
+    font-size: 1.5em;
+  }
+
+  .company-profile {
+    display: flex;
+    gap: 0.2em;
+  }
+
+  .cp-text {
+    width: 50%;
+    padding: 30px;
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-container {
+    height: 170px;
+    display: block;
+  }
+
+  .header-title {
+    width: 180px;
+    max-height: 70px;
+    margin-left: 1.2em;
+    padding-top: 10px;
+  }
+
+  .nav-container {
+    margin-top: 1.3em;
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 0.1em;
+    font-size: 0.9em;
+  }
+
+  .nav-cta a {
+    display: inline-block;
+    width: 80%;
+  }
+
+  .hero-section {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .hero-text {
+    top: 15vh;
+  }
+
+  .hero-text-p {
+    font-size: 1.1em;
+    line-height: 25px;
+  }
+
+  .hero-text a {
+    display: block;
+    width: 40%;
+    border-radius: 40px;
+    margin-top: 30px;
+  }
+
+  .cta-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  .cta-box-img {
+    width: 100%;
+    height: 350px;
+  }
+
+  .faq > a {
+    font-size: 1.1em;
+  }
+
+  .cp-text {
+    width: 50%;
+    padding: 20px;
+    font-size: 1.1em;
+  }
+}
